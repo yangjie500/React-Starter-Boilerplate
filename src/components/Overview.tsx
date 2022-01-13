@@ -125,9 +125,9 @@ class Overview extends Component<{}, IOverviewState> {
 
     return (
       <>
-        <form>
+        <form className="p-2 bg-orange-300">
           <label htmlFor="addTask">Add Task: </label>
-          <input id="addTask" onChange={this.handleChange} name="inputValue" value={this.state.inputValue}></input>
+          <input id="addTask" className="border-2" onChange={this.handleChange} name="inputValue" value={this.state.inputValue}></input>
           <button onClick={this.addTask}>Submit</button>
         </form>
         
